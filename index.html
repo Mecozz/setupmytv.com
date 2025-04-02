@@ -54,5 +54,14 @@
   <footer>
     <p>&copy; 2025 SetupMyTV</p>
   </footer>
+
+  <!-- Dark Mode Prompt Script -->
+  <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      if (confirm('Would you like to enable dark mode?')) {
+        document.body.classList.add('dark-mode');
+      }
+    });
+  </script>
 </body>
 </html>
