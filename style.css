@@ -1,0 +1,57 @@
+/* Basic resets and defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+  padding: 20px;
+}
+
+/* Navigation menu */
+header nav ul {
+  display: flex;
+  list-style: none;
+  background: #333;
+  padding: 10px;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Section headings */
+h1, h2 {
+  margin-bottom: 10px;
+}
+
+/* Hero section */
+#hero {
+  background: #eee;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
