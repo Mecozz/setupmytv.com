@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-/* Body styling */
+/* Light mode styles */
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -54,4 +54,26 @@ footer {
   text-align: center;
   font-size: 0.9rem;
   color: #666;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  color: #ddd;
+  background: #222;
+}
+
+body.dark-mode header nav ul {
+  background: #444;
+}
+
+body.dark-mode header nav ul li a {
+  color: #ddd;
+}
+
+body.dark-mode #hero {
+  background: #333;
+}
+
+body.dark-mode footer {
+  color: #aaa;
 }
