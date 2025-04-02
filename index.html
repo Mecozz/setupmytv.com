@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Dark Mode Toggle Button -->
+  <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
+
   <!-- Header / Navigation -->
   <header>
     <nav>
@@ -55,16 +58,18 @@
     <p>&copy; 2025 SetupMyTV</p>
   </footer>
 
-  <!-- Dark Mode Prompt Script with Debugging -->
+  <!-- Dark Mode Toggle Script -->
   <script>
-    window.addEventListener('DOMContentLoaded', function() {
-      if (confirm('Would you like to enable dark mode?')) {
-        document.body.classList.add('dark-mode');
-        console.log("Dark mode enabled.");
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      // Update button text based on mode
+      var btn = document.getElementById('dark-mode-toggle');
+      if(document.body.classList.contains('dark-mode')){
+        btn.textContent = 'Light Mode';
       } else {
-        console.log("Dark mode not enabled.");
+        btn.textContent = 'Dark Mode';
       }
-    });
+    }
   </script>
 </body>
 </html>
