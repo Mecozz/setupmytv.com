@@ -1,79 +1,75 @@
-/* Basic resets and defaults */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SetupMyTV</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Dark Mode Toggle Button -->
+  <button id="dark-mode-toggle" onclick="toggleDarkMode()">Dark Mode</button>
 
-/* Light mode styles */
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background: #f9f9f9;
-  padding: 20px;
-}
+  <!-- Header / Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-/* Navigation menu */
-header nav ul {
-  display: flex;
-  list-style: none;
-  background: #333;
-  padding: 10px;
-}
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="hero">
+      <h1>Welcome to SetupMyTV</h1>
+      <p>Your one-stop solution for streaming live TV without cable.</p>
+    </section>
 
-header nav ul li {
-  margin-right: 20px;
-}
+    <!-- Services Section -->
+    <section id="services">
+      <h2>Services We Offer</h2>
+      <ul>
+        <li>Fire Stick Setup</li>
+        <li>Roku Setup</li>
+        <li>Apple TV Setup</li>
+        <li>Smart TV Setup</li>
+      </ul>
+    </section>
 
-header nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-}
+    <!-- FAQ Section -->
+    <section id="faq">
+      <h2>Frequently Asked Questions</h2>
+      <p>Coming soon!</p>
+    </section>
 
-header nav ul li a:hover {
-  text-decoration: underline;
-}
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+      <p>For more information, email us at <a href="mailto:support@setupmytv.com">info@setupmytv.com</a>.</p>
+    </section>
+  </main>
 
-/* Section headings */
-h1, h2 {
-  margin-bottom: 10px;
-}
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 SetupMyTV</p>
+  </footer>
 
-/* Hero section */
-#hero {
-  background: #eee;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-/* Footer */
-footer {
-  margin-top: 40px;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #666;
-}
-
-/* Dark mode styles */
-body.dark-mode {
-  color: #ddd;
-  background: #222;
-}
-
-body.dark-mode header nav ul {
-  background: #444;
-}
-
-body.dark-mode header nav ul li a {
-  color: #ddd;
-}
-
-body.dark-mode #hero {
-  background: #333;
-}
-
-body.dark-mode footer {
-  color: #aaa;
-}
+  <!-- Dark Mode Toggle Script -->
+  <script>
+    function toggleDarkMode() {
+      document.body.classList.toggle('dark-mode');
+      // Update button text based on mode
+      var btn = document.getElementById('dark-mode-toggle');
+      if(document.body.classList.contains('dark-mode')){
+        btn.textContent = 'Light Mode';
+      } else {
+        btn.textContent = 'Dark Mode';
+      }
+    }
+  </script>
+</body>
+</html>
