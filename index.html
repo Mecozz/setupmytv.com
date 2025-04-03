@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> 
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,7 +20,7 @@
     id="dark-mode-toggle"
     onclick="toggleDarkMode()"
     class="btn btn-secondary position-fixed"
-    style="top: 10px; right: 10px; z-index: 1000;"
+    style="top: 10px; right: 10px;"
   >
     Dark Mode
   </button>
@@ -57,37 +57,83 @@
   </header>
 
   <!-- Main Content -->
-  <main class="container mt-4">
+  <main>
     <!-- Hero Section -->
-    <section id="hero" class="jumbotron">
-      <h1 class="display-4">Welcome to SetupMyTV</h1>
-      <p class="lead">Your one-stop solution for streaming live TV without cable.</p>
+    <section id="hero" class="jumbotron jumbotron-fluid mb-0">
+      <div class="container text-center">
+        <h1 class="display-4">Welcome to SetupMyTV</h1>
+        <p class="lead">
+          Your one-stop solution for streaming live TV without cable.
+        </p>
+      </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="my-5">
-      <h2>Services We Offer</h2>
-      <ul class="list-group">
-        <li class="list-group-item">Fire Stick Setup</li>
-        <li class="list-group-item">Roku Setup</li>
-        <li class="list-group-item">Apple TV Setup</li>
-        <li class="list-group-item">Smart TV Setup</li>
-      </ul>
+    <section id="services" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Services We Offer</h2>
+        <div class="row">
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Fire Stick Setup</h5>
+                <p class="card-text">
+                  Get your Fire Stick up and running for seamless streaming.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Roku Setup</h5>
+                <p class="card-text">
+                  Enjoy quick Roku setup for all your favorite channels.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Apple TV Setup</h5>
+                <p class="card-text">
+                  Configure Apple TV for a sleek and user-friendly experience.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3 mb-3">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Smart TV Setup</h5>
+                <p class="card-text">
+                  Streamline your Smart TV to access your favorite content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
-    <section id="faq" class="my-5">
-      <h2>Frequently Asked Questions</h2>
-      <p>Coming soon!</p>
+    <section id="faq" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="mb-4">Frequently Asked Questions</h2>
+        <p>Coming soon!</p>
+      </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="my-5">
-      <h2>Contact Us</h2>
-      <p>
-        For more information, email us at
-        <a href="mailto:support@setupmytv.com">info@setupmytv.com</a>.
-      </p>
+    <section id="contact" class="py-5">
+      <div class="container">
+        <h2 class="mb-4">Contact Us</h2>
+        <p>
+          For more information, email us at
+          <a href="mailto:support@setupmytv.com">info@setupmytv.com</a>.
+        </p>
+      </div>
     </section>
   </main>
 
