@@ -1,4 +1,4 @@
-/* Basic resets and defaults */
+what about the css /* Basic resets and defaults */
 * {
   margin: 0;
   padding: 0;
@@ -37,14 +37,43 @@ body.dark-mode .jumbotron {
 body.dark-mode .card {
   background-color: #333;
   color: #ddd;
+}what about the css /* Basic resets and defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body.dark-mode footer {
+/* Base font and colors for light mode */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #f9f9f9;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+  color: #ddd;
+  background: #222;
+}
+
+/* Adjustments for dark mode on Bootstrap components */
+body.dark-mode .navbar,
+body.dark-mode .bg-dark {
   background-color: #444 !important;
-  color: #aaa;
 }
 
-/* Dark mode toggle button styling */
-#dark-mode-toggle {
-  z-index: 1000;
+body.dark-mode .navbar-brand,
+body.dark-mode .nav-link {
+  color: #ddd !important;
+}
+
+body.dark-mode .jumbotron {
+  background-color: #333 !important;
+}
+
+body.dark-mode .card {
+  background-color: #333;
+  color: #ddd;
 }
