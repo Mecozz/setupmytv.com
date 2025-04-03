@@ -58,55 +58,33 @@
 
   <!-- Main Content -->
   <main>
-    <!-- Hero Section -->
     <section id="hero" class="jumbotron jumbotron-fluid mb-0">
       <div class="container text-center">
         <h1 class="display-4">Welcome to SetupMyTV</h1>
-        <p class="lead">
-          Your one-stop solution for streaming live TV without cable.
-        </p>
+        <p class="lead">Your one-stop solution for streaming live TV without cable.</p>
       </div>
     </section>
 
-    <!-- Updated Services Section -->
     <section id="services" class="py-5">
       <div class="container">
         <h2 class="mb-4">Our Services</h2>
         <div class="row">
-          <!-- DIY Streaming Setup Tutorial -->
           <div class="col-md-6 col-lg-4 mb-3">
             <div class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">DIY Streaming Setup Tutorial</h5>
-                <p class="card-text">
-                  Learn how to set up your TV with Fire Stick, Roku, Apple TV, and more using our comprehensive video tutorial. Discover how to cut the cord and switch to streaming easily while finding the best streaming provider to suit your needs.
-                </p>
+                <p class="card-text">Learn how to set up your TV with Fire Stick, Roku, Apple TV, and more using our video tutorial.</p>
                 <p class="card-text"><strong>Price:</strong> $29.99</p>
               </div>
             </div>
           </div>
-          <!-- In-Person Setup & Training -->
           <div class="col-md-6 col-lg-4 mb-3">
             <div class="card h-100">
               <div class="card-body">
                 <h5 class="card-title">In-Person Setup & Training</h5>
-                <p class="card-text">
-                  Let us come to your home to install your Fire Stick, Roku, or other streaming device. We'll spend time with you to go over how to use your new setup and answer all your questions.
-                </p>
+                <p class="card-text">We will come to your home to set up your streaming devices.</p>
                 <p class="card-text"><strong>Base Price:</strong> $129.99</p>
                 <p class="card-text"><strong>Additional TV Setup:</strong> $19.99 each</p>
-              </div>
-            </div>
-          </div>
-          <!-- Customized Streaming Solutions (Optional) -->
-          <div class="col-md-6 col-lg-4 mb-3">
-            <div class="card h-100">
-              <div class="card-body">
-                <h5 class="card-title">Customized Streaming Solutions</h5>
-                <p class="card-text">
-                  Need a tailored solution? We offer personalized advice on selecting the right streaming services and devices that perfectly match your lifestyle.
-                </p>
-                <p class="card-text">Contact us for a custom quote.</p>
               </div>
             </div>
           </div>
@@ -114,22 +92,10 @@
       </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="py-5 bg-light">
-      <div class="container">
-        <h2 class="mb-4">Frequently Asked Questions</h2>
-        <p>Coming soon!</p>
-      </div>
-    </section>
-
-    <!-- Contact Section -->
     <section id="contact" class="py-5">
       <div class="container">
         <h2 class="mb-4">Contact Us</h2>
-        <p>
-          For more information, email us at
-          <a href="mailto:support@setupmytv.com">info@setupmytv.com</a>.
-        </p>
+        <p>For more information, email us at <a href="mailto:info@setupmytv.com">info@setupmytv.com</a>.</p>
       </div>
     </section>
   </main>
@@ -137,51 +103,12 @@
   <!-- Footer -->
   <footer class="bg-dark text-light py-3">
     <div class="container text-center">
-      <p class="mb-0">&copy; 2025 SetupMyTV</p>
+      <p>&copy; 2025 SetupMyTV</p>
     </div>
   </footer>
 
-  <!-- Bootstrap JS, Popper.js, and jQuery -->
-  <script
-    src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDuBfvzQ+swZyZirR+S+TmIt9PAMcyiNSXcjg9Sly0rVN5a7xm"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-    integrity="sha384-B4gt1jrGC7Jh4Agw4+0o/p4U7Ly/4SrtZ9Y8PvE+oiB2lCEh1hbH2Cc8g4pJNR3"
-    crossorigin="anonymous"
-  ></script>
-  
-  <!-- Dark Mode Toggle Script with Local Storage -->
-  <script>
-    function toggleDarkMode() {
-      document.body.classList.toggle('dark-mode');
-      var btn = document.getElementById('dark-mode-toggle');
-      if (document.body.classList.contains('dark-mode')) {
-        btn.textContent = 'Light Mode';
-        localStorage.setItem('darkMode', 'true');
-      } else {
-        btn.textContent = 'Dark Mode';
-        localStorage.setItem('darkMode', 'false');
-      }
-    }
-
-    // On page load, check if dark mode was previously enabled
-    window.addEventListener('DOMContentLoaded', function() {
-      if (localStorage.getItem('darkMode') === 'true') {
-        document.body.classList.add('dark-mode');
-        document.getElementById('dark-mode-toggle').textContent = 'Light Mode';
-      } else {
-        document.body.classList.remove('dark-mode');
-        document.getElementById('dark-mode-toggle').textContent = 'Dark Mode';
-      }
-    });
-  </script>
+  <!-- Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
